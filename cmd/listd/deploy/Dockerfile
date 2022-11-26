@@ -6,7 +6,7 @@ RUN set -ex; \
     apk add --no-cache git
 
 # Copy Repository
-WORKDIR /go/src/github.com/george-e-shaw-iv/integration-tests-example/
+WORKDIR /go/src/github.com/shahrzadabedi/integration-tests-example/
 COPY . ./
 
 # Build Go Binary

@@ -10,7 +10,7 @@ services:
       context: .
       dockerfile: ./cmd/listd/deploy/Dockerfile.test
     volumes:
-      - $PWD:/go/src/github.com/george-e-shaw-iv/integration-tests-example
+      - $PWD:/go/src/github.com/shahrzadabedi/integration-tests-example/
     depends_on:
       - db
     networks:
@@ -18,9 +18,9 @@ services:
   db:
     image: postgres:11.1
     ports:
-      - "5432:5432"
+      - "5433:5433"
     expose:
-      - "5432"
+      - "5433"
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
