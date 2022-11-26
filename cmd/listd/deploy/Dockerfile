@@ -23,7 +23,7 @@ RUN set -ex; \
      ca-certificates
 
 WORKDIR /opt/
-COPY --from=src /go/src/github.com/george-e-shaw-iv/integration-tests-example/listd .
+COPY --from=src /go/src/github.com/shahrzadabedi/integration-tests-example/listd .
 
 # Run Go Binary
 CMD /opt/listd
